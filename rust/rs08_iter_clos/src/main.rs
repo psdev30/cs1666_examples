@@ -43,7 +43,7 @@ fn main() {
 	// Still moved, even though i types implement Copy, Vec<i32> does not
 	//println!("first int again: {}", ints[0]);
 
-	let ints = vec![5, 10, 37, 84, 22, 3, 8, 100, 50, 45, 12, 7, 63]
+	let ints = vec![5, 10, 37, 84, 22, 3, 8, 100, 50, 45, 12, 7, 63];
 
 	//TODO: Create a vector of all of the odd values in ints using iterators
 

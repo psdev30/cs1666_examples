@@ -35,8 +35,36 @@ fn main() {
 		},
 		None => println!("Got nothing :("),
 	}
+
+	let maybe_shot = maybe_get_shot();
+	match maybe_shot {
+		Some(s) => match s {
+			Shot::Two => println!("Made a two pointer!"),
+			Shot::Three => println!("Made a three!"),
+			Shot::FreeThrow => print!("Made a free throw!"),
+		},
+		None => println!("You missed the shot :(")
+	}
 }
 
 //TODO: Write your own enum, and use it with another match statement
 
 //<Your code here>
+enum Shot {
+	Three,
+	Two,
+	FreeThrow
+}
+
+fn maybe_get_shot() -> Option<Shot> {
+	let res = rand::thread_rng().gen_range(12..27);
+
+	println!("Generated: {}", res);
+
+	match res {
+	12..=16 => Some(Shot::Two),
+	17..=21 => Some(Shot::Three),
+	22..=26 => Some(Shot::FreeThrow),
+	_ => None,
+	}
+}

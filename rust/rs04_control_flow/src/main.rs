@@ -44,13 +44,19 @@ fn main() {
 		println!("In for, i: {}", i);
 	}
 
-	//TODO: Use a for loop to print out the ints from 0-9 (inclusive)
+	//Use a for loop to print out the ints from 0-9 (inclusive)
 
 	//<Your code here>
+	for i in 0..10 {
+		println!("{}", i)
+	}
 
-	//TODO: Use a for loop to print out the ints from 1-10 (inclusive)
+	//Use a for loop to print out the ints from 1-10 (inclusive)
 
 	//<Your code here>
+	for i in 1..11 {
+		println!("{}", i)
+	}
 
 	// loop
 	let mut n = 6;

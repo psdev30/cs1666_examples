@@ -48,14 +48,14 @@ fn main() {
 
 	//<Your code here>
 	for i in 0..10 {
-		println!("{}", i)
+		println!("In for, i: {}", i)
 	}
 
 	//Use a for loop to print out the ints from 1-10 (inclusive)
 
 	//<Your code here>
-	for i in 1..11 {
-		println!("{}", i)
+	for i in 1..=10 {
+		println!("In for, i: {}", i)
 	}
 
 	// loop
